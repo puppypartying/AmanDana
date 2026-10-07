@@ -1,0 +1,16 @@
+# Cloudflare Pages. SPA fallback (/hasil → index.html) otomatis selama tidak ada 404.html atau _redirects catch-all.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), bluetooth=()
+
+# Service worker dan manifest harus selalu dicek ulang agar update versi baru terdeteksi.
+/sw.js
+  Cache-Control: no-cache
+/manifest.webmanifest
+  Cache-Control: no-cache
+
+# Nama file di /assets berisi hash isi, jadi aman di-cache selamanya.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
