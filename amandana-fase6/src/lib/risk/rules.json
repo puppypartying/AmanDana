@@ -344,6 +344,37 @@
       "icon": "ShieldAlert",
       "label": "Akses kontak digabung ancaman penyebaran data",
       "explanation": "Gabungan ini adalah pola khas pinjol ilegal, jadi langsung dinilai risiko tinggi."
+    },
+    {
+      "id": "floor-ancaman",
+      "requires": [
+        "pin-ancaman"
+      ],
+      "minScore": 70,
+      "icon": "ShieldAlert",
+      "label": "Ancaman penagihan",
+      "explanation": "Ancaman atau penyebaran data pribadi bukan penagihan yang sah, jadi langsung dinilai risiko tinggi."
+    },
+    {
+      "id": "floor-imbal-pasti",
+      "requires": [
+        "inv-imbal-pasti"
+      ],
+      "minScore": 40,
+      "icon": "TrendingUp",
+      "label": "Janji untung tidak wajar",
+      "explanation": "Janji keuntungan pasti atau sangat tinggi sudah cukup menjadi alasan untuk waspada."
+    },
+    {
+      "id": "floor-imbal-plus",
+      "requires": [
+        "inv-imbal-pasti"
+      ],
+      "minOthers": 1,
+      "minScore": 70,
+      "icon": "TrendingUp",
+      "label": "Janji untung tidak wajar disertai tanda bahaya lain",
+      "explanation": "Janji untung tidak wajar yang dibarengi tanda bahaya lain adalah pola penipuan investasi."
     }
   ]
 }
