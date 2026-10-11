@@ -1,0 +1,27 @@
+{
+  // Konfigurasi Cloudflare Worker (static assets + API). File ini menjadi sumber konfigurasi tunggal:
+  // binding dan variabel di dashboard yang tidak ada di sini akan terhapus saat deploy berikutnya.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // WAJIB sama persis dengan nama Worker yang sudah ada di dashboard (kalau beda, deploy membuat Worker baru).
+  "name": "amandana",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // /hasil, /simulator, dst. dijawab index.html (SPA). public/_headers tetap berlaku.
+    "not_found_handling": "single-page-application",
+    // Hanya dua jalur ini yang menjalankan kode Worker; sisanya langsung dari assets.
+    "run_worker_first": ["/api/*", "/admin-api/*"]
+  },
+  "kv_namespaces": [
+    // Isi id dari Workers & Pages -> KV -> namespace Anda. Selama masih placeholder, deploy akan gagal (disengaja).
+    { "binding": "AMANDANA_KV", "id": "GANTI_DENGAN_ID_NAMESPACE_KV" }
+  ],
+  "vars": {
+    // Dari Zero Trust: team domain dan Application Audience (AUD) tag aplikasi Access. Bukan rahasia.
+    // Dibiarkan kosong, /admin-api menolak semua permintaan (gagal tertutup).
+    "ACCESS_TEAM_DOMAIN": "",
+    "ACCESS_AUD": ""
+  }
+}
