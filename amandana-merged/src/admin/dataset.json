@@ -1,0 +1,452 @@
+[
+ {
+  "id": "d01",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Dana cair 5 menit tanpa survei! Untung 10% per minggu pasti, ajak teman dapat bonus. Slot terbatas, transfer ke rekening pribadi admin.",
+  "note": "Lampiran B contoh 1 (skor 82)"
+ },
+ {
+  "id": "d02",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Join member VIP sekarang, profit harian 3% dijamin pasti cair tiap hari. Setor modal ke rekening pribadi admin Budi ya kak. Kuota tinggal 5 orang!"
+ },
+ {
+  "id": "d03",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Investasi emas digital, untung 20% per bulan tanpa risiko. Ajak 3 teman langsung dapat bonus 500 ribu per orang. Terdaftar dan diawasi OJK."
+ },
+ {
+  "id": "d04",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Robot trading AI profit pasti 5% per hari, deposit minimal 1 juta ke rek pribadi kami. Buruan slot terbatas hari ini!"
+ },
+ {
+  "id": "d05",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Kripto cuan dijamin 100% balik modal. Direkomendasikan artis dan didukung menteri. Transfer ke rekening pribadi admin untuk aktivasi."
+ },
+ {
+  "id": "d06",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Arisan online bagi hasil 15% pasti tiap minggu. Rekrut downline dapat bonus tambahan. Setor ke rekening pribadi koordinator."
+ },
+ {
+  "id": "d07",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Peluang terbatas! Modal 500rb jadi 5 juta dalam 7 hari, profit pasti. Jangan sampai kehabisan, daftar sekarang lewat admin WA.",
+  "note": "sulit: janji return tidak memakai kata \"pasti\" persis"
+ },
+ {
+  "id": "d08",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Saham fiktif IPO eksklusif, untung dijamin 30% dalam sebulan. Hanya untuk 20 orang pertama, transfer DP ke rekening atas nama pribadi."
+ },
+ {
+  "id": "d09",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Bergabung dengan komunitas trader kami. Terdaftar resmi di Bappebti dan OJK. Profit konsisten 8% per minggu, ajak teman join dapat komisi.",
+  "note": "sulit: \"profit konsisten\" bukan kata kunci janji pasti"
+ },
+ {
+  "id": "d10",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Cuan pasti tiap hari! Top up lewat rekening pribadi admin, bonus referral buat yang ajak teman. Slot terbatas."
+ },
+ {
+  "id": "d11",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Pinjaman cepat tanpa BI checking, wajib akses kontak, potongan admin 20% di muka, tenor 7 hari.",
+  "note": "Lampiran B contoh 2 (skor 60)"
+ },
+ {
+  "id": "d12",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Pinjam 2 juta cair 1,6 juta, tenor 14 hari. Wajib izinkan akses kontak dan galeri. Telat bayar kami sebar foto dan data ke semua kontakmu."
+ },
+ {
+  "id": "d13",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Kalau terlambat bayar kami akan teror keluarga dan atasanmu, data pribadimu kami viralkan. Akses kontak wajib diizinkan."
+ },
+ {
+  "id": "d14",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Dapat dana instan 3 juta tanpa jaminan. Biaya admin dipotong di muka 30%, bunga dan denda sesuai kebijakan aplikasi. Lunas dalam 10 hari."
+ },
+ {
+  "id": "d15",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Pinjaman online cair 10 menit! Syarat KTP dan akses galeri foto kontak. Tenor 5 hari, denda harian tidak dijelaskan."
+ },
+ {
+  "id": "d16",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Kami akan datangi rumah dan kantor kamu kalau gagal bayar, fotomu disebar ke grup. Tenor 7 hari."
+ },
+ {
+  "id": "d17",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Pinjol kilat tanpa survei, potongan di muka 25% dan biaya lain menyusul. Izin akses kontak wajib. Bayar dalam 14 hari."
+ },
+ {
+  "id": "d18",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Hai kak, ada pinjaman dana tunai 5jt, cair hari ini. Aplikasi minta izin kontak dan lokasi. Jika telat, tim kami teror semua kontak darurat."
+ },
+ {
+  "id": "d19",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Dana cair 800 ribu dari pinjaman 1 juta, selisih sebagai biaya administrasi. Tenor 7 hari, bunga dan denda ditentukan kemudian.",
+  "note": "sulit: potongan disamarkan sebagai \"biaya administrasi\""
+ },
+ {
+  "id": "d20",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "tuning",
+  "text": "Wajib izinkan akses kontak, kalau telat kami sebar data ke semua kontakmu.",
+  "note": "KASUS TEMUAN 3: harus Tinggi, bukan 0"
+ },
+ {
+  "id": "s01",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Pinjaman dari bank terdaftar OJK. Dana cair ke rekening atas nama Anda 1 hari kerja setelah disetujui. Biaya admin 1% dijelaskan di awal dan tercantum di perjanjian. Tenor 12 bulan.",
+  "note": "KASUS TEMUAN 1: menyebut \"cair\" dan \"biaya admin\", bukan skor 36"
+ },
+ {
+  "id": "s02",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Reksa dana ini tidak menjamin untung dan nilainya bisa turun. Baca prospektus sebelum membeli.",
+  "note": "KASUS TEMUAN 2: \"tidak menjamin untung\" tidak kena +28"
+ },
+ {
+  "id": "s03",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Cek legalitas pinjol di situs OJK sebelum meminjam. Pastikan bunga, denda, dan tenor dijelaskan sejak awal."
+ },
+ {
+  "id": "s04",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Hati-hati tawaran pinjol: aplikasi yang meminta akses kontak dan galeri adalah tanda bahaya.",
+  "note": "edukasi; boleh kena tanda bahaya tunggal tapi tidak sampai Sedang"
+ },
+ {
+  "id": "s05",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Kami tidak pernah meminta akses kontak, galeri, atau lokasi Anda."
+ },
+ {
+  "id": "s06",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Pinjaman tanpa potongan di muka dan tanpa biaya tersembunyi. Seluruh biaya ditampilkan sebelum Anda setuju. Tenor 6 bulan."
+ },
+ {
+  "id": "s07",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Ingat, investasi apa pun punya risiko. Jangan percaya janji untung pasti."
+ },
+ {
+  "id": "s08",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Halo, besok jadi ketemu jam 10 di kantin kampus? Aku bawa catatan kuliah."
+ },
+ {
+  "id": "s09",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Tagihan listrik bulan ini Rp350.000, jatuh tempo tanggal 20."
+ },
+ {
+  "id": "s10",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Promo cashback 10% untuk pembelian pertama di aplikasi kami, berlaku sampai akhir bulan."
+ },
+ {
+  "id": "s11",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Bank kami menawarkan KPR tenor 15 tahun dengan bunga tetap 2 tahun pertama. Simulasi lengkap ada di brosur."
+ },
+ {
+  "id": "s12",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Pinjaman kampus untuk mahasiswa: bunga 0,5% per bulan, cicilan 12 bulan, tanpa agunan. Pendaftaran lewat bagian kemahasiswaan."
+ },
+ {
+  "id": "s13",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Reksa dana pasar uang: imbal hasil tidak dijamin, dapat naik atau turun. Terdaftar dan diawasi OJK.",
+  "note": "klaim izin legal; boleh kena +18 tapi tidak sampai Sedang"
+ },
+ {
+  "id": "s14",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Seminar literasi keuangan: kenali ciri investasi bodong, termasuk ajakan rekrut teman dan bonus referral."
+ },
+ {
+  "id": "s15",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Pembayaran cicilan motor jatuh tempo 5 hari lagi. Mohon segera dibayar via minimarket atau mobile banking."
+ },
+ {
+  "id": "s16",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Terima kasih sudah bergabung. Statement kartu kredit bulan Oktober sudah tersedia di aplikasi."
+ },
+ {
+  "id": "s17",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Dana darurat sebaiknya 3 sampai 6 kali pengeluaran bulanan, simpan di instrumen yang likuid."
+ },
+ {
+  "id": "s18",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Pengajuan KTA: bunga efektif 1,2% per bulan, biaya provisi 1% dipotong dari pencairan dan tertulis jelas di ringkasan produk. Tenor 24 bulan."
+ },
+ {
+  "id": "s19",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Bagi hasil usaha warung kami 5% dari laba bersih tiap bulan, tergantung penjualan."
+ },
+ {
+  "id": "s20",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "tuning",
+  "text": "Waspada penipuan: OJK tidak pernah meminta transfer ke rekening pribadi. Laporkan ke kanal resmi."
+ },
+ {
+  "id": "h101",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "holdout",
+  "text": "Selamat! Limit pinjaman Rp8jt sudah aktif atas nama Anda. Untuk menarik dana, lunasi dulu biaya asuransi Rp400rb ke nomor rekening yang kami kirim.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h102",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "holdout",
+  "text": "Pinjam 1 juta cuma 5 menit cair, tanpa slik. Dana yang kamu terima 800 ribu, balikin 1 juta dalam 7 hari. Aplikasi minta izin kontak dan galeri ya.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h103",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "holdout",
+  "text": "Bayar hari ini atau foto KTP kamu kami sebarkan ke semua kontak di ponselmu dan keluargamu kami datangi.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h104",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "holdout",
+  "text": "Pinjaman kilat, unduh APK terbaru di bit.ly/dana-kilat, pengajuan langsung cair, tenor 7 hari, potongan 15% dari pencairan.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h105",
+  "kind": "Pinjol",
+  "label": "berbahaya",
+  "split": "holdout",
+  "text": "Hai, ada pinjaman Rp3 juta tanpa jaminan. Transfer Rp300.000 dulu ke rekening pribadi petugas kami agar pencairan dipercepat.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h106",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "holdout",
+  "text": "Cuan 3% per hari dari trading otomatis! Daftar hari ini, ajak 2 teman dapat bonus langsung. Setor ke e-wallet pribadi admin.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h107",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "holdout",
+  "text": "Investasi emas batangan dijamin untung, tidak mungkin rugi. Slot terbatas tinggal 3 orang, segera transfer.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h108",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "holdout",
+  "text": "Grup VIP kripto: modal 2 juta jadi 10 juta dalam 10 hari. Hubungi WA admin, deposit awal Rp500.000.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h109",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "holdout",
+  "text": "Platform kami terdaftar di OJK dan Bappebti, return 25% per bulan, pencairan kapan saja, wajib rekrut 3 downline.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h110",
+  "kind": "Investasi",
+  "label": "berbahaya",
+  "split": "holdout",
+  "text": "Passive income Rp500 ribu per hari tanpa kerja, cukup deposit dan bagikan link referral ke teman.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h111",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "holdout",
+  "text": "Pengingat: cicilan KPR Anda Rp3.200.000 jatuh tempo tanggal 5. Pembayaran melalui kanal resmi bank. Denda keterlambatan sesuai perjanjian kredit.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h112",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "holdout",
+  "text": "Pinjaman koperasi karyawan: plafon Rp10.000.000, bunga 1% per bulan, tenor 12 bulan, potongan gaji bulanan. Proses persetujuan 3 hari kerja.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h113",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "holdout",
+  "text": "Aplikasi hanya meminta izin notifikasi dan kamera untuk verifikasi identitas. Kami tidak mengakses kontak Anda dan tidak melakukan penagihan dengan ancaman.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h114",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "holdout",
+  "text": "Limit paylater Anda naik menjadi Rp5.000.000. Biaya layanan 2% per transaksi cicilan 6 bulan, rincian total bayar tampil sebelum Anda mengonfirmasi.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h115",
+  "kind": "Pinjol",
+  "label": "sah",
+  "split": "holdout",
+  "text": "Tips OJK: sebelum meminjam, cek legalitas penyelenggara, hitung total biaya termasuk bunga dan denda, dan jangan tergoda pinjaman yang meminta akses kontak.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h116",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "holdout",
+  "text": "Informasi produk: reksa dana pendapatan tetap, imbal hasil tidak dijamin dan dapat berubah. Investasi mengandung risiko. Baca prospektus sebelum membeli.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h117",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "holdout",
+  "text": "Surat berharga negara ritel dengan kupon 6% per tahun, ditawarkan melalui bank dan perusahaan sekuritas mitra distribusi resmi.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h118",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "holdout",
+  "text": "Webinar gratis Sabtu ini: mengenali investasi bodong, ciri-ciri skema ponzi, dan cara mengecek izin di OJK. Kuota terbatas 200 peserta.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h119",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "holdout",
+  "text": "Saham yang kami analisis bisa naik maupun turun. Kinerja masa lalu tidak menjamin hasil mendatang. Keputusan investasi sepenuhnya milik Anda.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ },
+ {
+  "id": "h120",
+  "kind": "Investasi",
+  "label": "sah",
+  "split": "holdout",
+  "text": "Laporan bulanan: nilai aktiva bersih reksa dana Anda naik 1,2% bulan ini. Hasil investasi dapat berfluktuasi.",
+  "note": "holdout awal (dari prototype-v2); sebagian sudah terlihat saat analisis, jangan dipakai menyetel aturan"
+ }
+]
