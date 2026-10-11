@@ -76,3 +76,27 @@ describe('evaluasi set uji berlabel (40 pesan)', () => {
     expect(r.recall).toBeGreaterThanOrEqual(0.8)
   })
 })
+
+describe('pembacaan angka dan lantai skor (Opsi A)', () => {
+  it('untung 5% per hari dibaca sebagai imbal hasil tidak wajar tanpa kata "pasti"', () => {
+    const r = scoreOffer('Join sekarang, untung 5% per hari langsung masuk.', 'Investasi')
+    expect(r.matchedRules.map((m) => m.id)).toContain('inv-imbal-pasti')
+    expect(r.score).toBeGreaterThanOrEqual(40)
+  })
+  it('imbal hasil wajar (7% per tahun) tidak ditandai', () => {
+    expect(scoreOffer('Reksa dana pendapatan tetap, return 7% per tahun, bisa naik turun.', 'Investasi').score).toBe(0)
+  })
+  it('janji untung tidak wajar + rekening pribadi minimal Tinggi', () => {
+    expect(scoreOffer('Untung 3% per hari, transfer ke rekening pribadi admin.', 'Investasi').level).toBe('Tinggi')
+  })
+  it('ancaman penagihan saja minimal Tinggi', () => {
+    expect(scoreOffer('Telat bayar, kami sebarkan foto KTP kamu.', 'Pinjol').level).toBe('Tinggi')
+  })
+  it('dana cair jauh lebih kecil dari pinjaman dibaca sebagai potongan di muka', () => {
+    const r = scoreOffer('Pinjaman Rp1 juta, dana cair Rp800 ribu.', 'Pinjol')
+    expect(r.matchedRules.map((m) => m.id)).toContain('pin-potongan-muka')
+  })
+  it('biaya admin kecil (2%) tidak ditandai', () => {
+    expect(scoreOffer('Biaya admin 2% dari pinjaman, bunga 1,5% per bulan.', 'Pinjol').score).toBe(0)
+  })
+})
