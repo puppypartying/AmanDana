@@ -1,5 +1,6 @@
 import data from './rules.json'
 import { normalize } from './normalize'
+import { numericEvidence } from './numeric'
 
 export type RiskLevel = 'Rendah' | 'Sedang' | 'Tinggi'
 export type OfferKind = 'Pinjol' | 'Investasi'
@@ -33,6 +34,7 @@ export function scoreOffer(rawText: string, kind: OfferKind): RiskResult {
   const text = normalize(rawText)
   const matchedRules: MatchedRule[] = []
   const reasons: RiskReason[] = []
+  const numeric = numericEvidence(rawText, kind)
   for (const rule of compiled) {
     if (rule.category !== 'umum' && rule.category !== kind.toLowerCase()) continue
     let evidence: string | null = null
@@ -43,6 +45,7 @@ export function scoreOffer(rawText: string, kind: OfferKind): RiskResult {
       }
       if (evidence) break
     }
+    evidence ??= numeric[rule.id] ?? null
     if (!evidence) continue
     matchedRules.push({ id: rule.id, label: rule.label, category: rule.category, weight: rule.weight, evidence })
     reasons.push({ ruleId: rule.id, title: rule.label, detail: rule.explanation, weight: rule.weight, icon: rule.icon })
@@ -52,7 +55,9 @@ export function scoreOffer(rawText: string, kind: OfferKind): RiskResult {
   const ids = new Set(matchedRules.map((r) => r.id))
   for (const combo of data.combos) {
     if (!combo.requires.every((id) => ids.has(id))) continue
+    if (((combo as { minOthers?: number }).minOthers ?? 0) > ids.size - combo.requires.length) continue
     const final = Math.min(100, Math.max(score, combo.minScore))
+    if (final <= score) continue // lantai tidak menaikkan skor: tidak perlu jadi alasan tambahan
     reasons.push({ ruleId: combo.id, title: combo.label, detail: combo.explanation, weight: final - score, icon: combo.icon })
     score = final
   }
