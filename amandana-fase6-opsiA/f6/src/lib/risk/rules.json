@@ -1,0 +1,380 @@
+{
+  "_catatan": "Satu-satunya sumber bobot skor. Bobot aturan aktif mengikuti laporan Bab 4.3; aturan enabled=false hanya ada di kode lama dan menunggu keputusan manusia.",
+  "thresholds": {
+    "sedang": 40,
+    "tinggi": 70
+  },
+  "negationWindow": 5,
+  "negationWords": [
+    "tidak",
+    "tak",
+    "bukan",
+    "tanpa",
+    "jangan",
+    "belum",
+    "nggak",
+    "ngga",
+    "gak",
+    "ga",
+    "enggak",
+    "tiada",
+    "bebas",
+    "non"
+  ],
+  "rules": [
+    {
+      "id": "inv-imbal-pasti",
+      "category": "investasi",
+      "weight": 28,
+      "icon": "TrendingUp",
+      "enabled": true,
+      "label": "Imbal hasil tinggi dan dijanjikan pasti",
+      "explanation": "Janji keuntungan pasti atau tanpa risiko patut dicurigai. Investasi yang sah selalu punya risiko.",
+      "patterns": [
+        {
+          "re": "\\b(?:untung|keuntungan|profit|cuan|bagi hasil|imbal hasil|return|bunga)\\b\\s+<G6>(?:pasti|dijamin|menjamin|jaminan|garansi|guaranteed)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:pasti|dijamin|menjamin|jaminan|garansi|guaranteed)\\s+<G3>(?:untung|keuntungan|profit|cuan|imbal hasil|return)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:untung|keuntungan|profit|cuan|bagi hasil|imbal hasil|return)\\b\\s+<G6>(?:tanpa|bebas)\\s+risiko\\b",
+          "inner": false
+        }
+      ]
+    },
+    {
+      "id": "inv-ajak-teman",
+      "category": "investasi",
+      "weight": 20,
+      "icon": "Users",
+      "enabled": true,
+      "label": "Skema ajak teman untuk bonus",
+      "explanation": "Bonus yang bergantung pada perekrutan peserta baru adalah ciri skema piramida.",
+      "patterns": [
+        {
+          "re": "\\bajak\\w*\\s+<G2>(?:teman|kawan|sahabat|orang|keluarga|saudara)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:referral|referal|downline|upline|mlm)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\brekrut\\w*",
+          "inner": true
+        },
+        {
+          "re": "\\bundang\\s+<G2>(?:teman|kawan)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\bbonus\\s+<G3>(?:ajak\\w*|undang\\w*|referral|referal|rekrut\\w*)",
+          "inner": true
+        }
+      ]
+    },
+    {
+      "id": "inv-rekening-pribadi",
+      "category": "investasi",
+      "weight": 24,
+      "icon": "Wallet",
+      "enabled": true,
+      "label": "Transfer ke rekening pribadi",
+      "explanation": "Dana diminta masuk ke rekening perorangan, bukan rekening perusahaan berizin.",
+      "patterns": [
+        {
+          "re": "\\b(?:rekening|rek|norek)\\s+(?:atas\\s+nama\\s+)?(?:pribadi|perorangan|admin|agen|marketing|koordinator)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:atas\\s+nama|an)\\s+(?:pribadi|perorangan)\\b",
+          "inner": true
+        }
+      ]
+    },
+    {
+      "id": "inv-tekanan-waktu",
+      "category": "investasi",
+      "weight": 10,
+      "icon": "TriangleAlert",
+      "enabled": true,
+      "label": "Tekanan waktu atau slot terbatas",
+      "explanation": "Kamu didesak mengambil keputusan cepat sebelum sempat memeriksa.",
+      "patterns": [
+        {
+          "re": "\\b(?:slot|kuota|kursi|sisa)\\s+<G2>(?:terbatas|tinggal|hampir habis|menipis|sisa)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:terbatas|tinggal)\\s+<G2>(?:slot|kuota|kursi|orang)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:buruan|jangan sampai kehabisan|keburu habis|waktu terbatas|penawaran terbatas|peluang terbatas)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:hanya|khusus)\\s+(?:untuk\\s+)?<G1>\\d+\\s+orang\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:hari ini|sekarang|segera)\\s+<G3>(?:atau|sebelum)\\s+<G3>(?:habis|hangus|tutup|ditutup|berakhir)\\b",
+          "inner": true
+        }
+      ]
+    },
+    {
+      "id": "inv-catut-ojk",
+      "category": "investasi",
+      "weight": 18,
+      "icon": "ShieldAlert",
+      "enabled": true,
+      "label": "Mencatut nama OJK atau tokoh tanpa bukti",
+      "explanation": "Klaim izin atau dukungan perlu dicek langsung ke sumber resmi, bukan dari pengakuan penawar.",
+      "patterns": [
+        {
+          "re": "\\b(?:terdaftar|diawasi|berizin|resmi|diizinkan|disetujui|dijamin|bekerja\\s*sama)\\s+<G4>(?:ojk|bappebti|bank indonesia|kominfo|kemenkeu|lps)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:ojk|bappebti|lps)\\s+<G2>(?:terdaftar|resmi|menjamin|mengawasi|berizin)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:direkomendasikan|rekomendasi|didukung|dipromosikan|endorse\\w*|diendorse)\\s+<G3>(?:presiden|menteri|artis|selebriti|tokoh|ojk|pejabat)\\b",
+          "inner": true
+        }
+      ]
+    },
+    {
+      "id": "pin-akses-kontak",
+      "category": "pinjol",
+      "weight": 25,
+      "icon": "Users",
+      "enabled": true,
+      "label": "Meminta akses kontak atau galeri",
+      "explanation": "Kontak dan galeri bukan syarat yang wajar untuk menilai kemampuan bayar.",
+      "patterns": [
+        {
+          "re": "\\b(?:akses|izin|ijin|izinkan|mengizinkan|permission)\\s+<G3>(?:kontak|galeri|foto|lokasi|sms)\\w*\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:kontak|galeri)\\w*\\s+<G2>(?:wajib|harus|diakses|diizinkan)\\b",
+          "inner": true
+        }
+      ]
+    },
+    {
+      "id": "pin-ancaman",
+      "category": "pinjol",
+      "weight": 25,
+      "icon": "ShieldAlert",
+      "enabled": true,
+      "label": "Ancaman atau teror dalam penagihan",
+      "explanation": "Ancaman dan penyebaran data pribadi bukan cara penagihan yang dibenarkan.",
+      "patterns": [
+        {
+          "re": "\\b(?:meng)?ancam\\w*\\s+<G6>(?:data|foto|kontak|keluarga|teman|rumah|kantor|atasan|polisi|aib)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:meneror|teror\\w*)\\s+<G6>(?:data|foto|kontak|keluarga|teman|rumah|kantor|atasan)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:menyebar\\w*|disebar\\w*|sebar\\w*|penyebaran|viralkan|diviralkan|memviralkan|mempermalukan|bongkar\\w*)\\s+<G6>(?:data|foto|kontak|keluarga|teman|rumah|kantor|atasan|aib|grup)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:datangi|mendatangi|didatangi)\\s+<G4>(?:rumah|kantor|kampus|keluarga)\\b",
+          "inner": true
+        }
+      ]
+    },
+    {
+      "id": "pin-potongan-muka",
+      "category": "pinjol",
+      "weight": 20,
+      "icon": "ArrowDownLeft",
+      "enabled": true,
+      "label": "Potongan di muka dan biaya tidak jelas",
+      "explanation": "Dana yang cair bisa jauh lebih kecil dari pinjaman. Hitung biaya sebenarnya di Simulator.",
+      "patterns": [
+        {
+          "re": "\\bpotongan\\s+(?:admin\\s+|biaya\\s+)?(?:\\d+\\s*%\\s+)?(?:di\\s?muka|dimuka|di\\s+awal)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:di\\s?muka|dimuka)\\s+<G2>(?:potong\\w*|admin|biaya)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\bpotongan\\s+(?:admin|biaya)\\s+\\d+\\s*%",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:dipotong|dipotongkan)\\s+<G3>(?:di\\s?muka|dimuka|di\\s+awal|dari\\s+pencairan)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\bbiaya\\s+(?:tersembunyi|tidak\\s+jelas|lain\\w*\\s+menyusul|lain\\w*\\s+ditentukan|lain\\w*\\s+nanti)\\b",
+          "inner": true
+        }
+      ]
+    },
+    {
+      "id": "pin-tenor-pendek",
+      "category": "pinjol",
+      "weight": 15,
+      "icon": "TriangleAlert",
+      "enabled": true,
+      "label": "Tenor sangat pendek (30 hari atau kurang)",
+      "explanation": "Tenor sangat pendek membuat biaya setara per tahun melonjak dan pelunasan sulit.",
+      "patterns": [
+        {
+          "re": "\\b(?:tenor|jangka\\s+waktu|jatuh\\s+tempo|durasi|pelunasan|lunas|bayar\\w*|cicil\\w*|tempo)\\s+<G3>(?:[1-9]|[12]\\d|30)\\s*(?:hari|hr)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:[1-9]|[12]\\d|30)\\s*(?:hari|hr)\\s+<G2>(?:lunas|tenor|jatuh\\s+tempo)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:tenor|jangka\\s+waktu|durasi)\\s+<G2>(?:[1-4]|satu|dua|tiga|empat)\\s*(?:minggu|mgg|pekan)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:seminggu|sepekan|sebulan)\\s+<G2>lunas\\b",
+          "inner": true
+        }
+      ]
+    },
+    {
+      "id": "pin-bunga-denda",
+      "category": "pinjol",
+      "weight": 15,
+      "icon": "HandCoins",
+      "enabled": true,
+      "label": "Bunga dan denda tidak dijelaskan",
+      "explanation": "Bunga dan denda yang tidak dijelaskan membuat total biaya sulit dihitung.",
+      "patterns": [
+        {
+          "re": "\\b(?:bunga|denda|biaya)\\s+<G4>(?:tidak\\s+(?:dijelaskan|jelas|diinformasikan|disebutkan)|menyusul|ditentukan\\s+(?:kemudian|nanti)|dirahasiakan|rahasia)\\b",
+          "inner": false
+        },
+        {
+          "re": "\\b(?:bunga|denda)\\s+<G3>(?:sesuai|berdasarkan)\\s+<G2>(?:kebijakan|ketentuan\\s+aplikasi|aplikasi)\\b",
+          "inner": false
+        },
+        {
+          "re": "\\b(?:tanpa|tidak\\s+ada)\\s+<G2>(?:rincian|informasi|info|penjelasan)\\s+<G2>(?:bunga|denda)\\b",
+          "inner": false
+        }
+      ]
+    },
+    {
+      "id": "pin-pencairan-cepat",
+      "category": "pinjol",
+      "weight": 18,
+      "icon": "HandCoins",
+      "enabled": false,
+      "label": "Pencairan sangat cepat tanpa pemeriksaan",
+      "explanation": "Tawaran yang meniadakan pemeriksaan perlu dicermati.",
+      "note": "Ada di kode lama (18), tidak ada di Bab 4.3.",
+      "patterns": [
+        {
+          "re": "\\b(?:cair|pencairan)\\s+<G4>(?:menit|detik)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\btanpa\\s+(?:survei|survey|bi\\s+checking|slik)\\b",
+          "inner": true
+        }
+      ]
+    },
+    {
+      "id": "pin-rekening-pribadi",
+      "category": "pinjol",
+      "weight": 24,
+      "icon": "Wallet",
+      "enabled": false,
+      "label": "Transfer ke rekening pribadi",
+      "explanation": "Dana diminta masuk ke rekening perorangan.",
+      "note": "Ada di kode lama (24) untuk pinjol; Bab 4.3 hanya untuk investasi.",
+      "patterns": [
+        {
+          "re": "\\b(?:rekening|rek|norek)\\s+(?:atas\\s+nama\\s+)?(?:pribadi|perorangan|admin|agen|marketing|koordinator)\\b",
+          "inner": true
+        }
+      ]
+    },
+    {
+      "id": "pin-tekanan-waktu",
+      "category": "pinjol",
+      "weight": 16,
+      "icon": "TriangleAlert",
+      "enabled": false,
+      "label": "Tekanan waktu atau slot terbatas",
+      "explanation": "Kamu didesak mengambil keputusan cepat.",
+      "note": "Ada di kode lama (16) untuk pinjol; Bab 4.3 hanya untuk investasi (10).",
+      "patterns": [
+        {
+          "re": "\\b(?:slot|kuota|kursi|sisa)\\s+<G2>(?:terbatas|tinggal|hampir habis|menipis|sisa)\\b",
+          "inner": true
+        },
+        {
+          "re": "\\b(?:buruan|jangan sampai kehabisan|keburu habis|waktu terbatas)\\b",
+          "inner": true
+        }
+      ]
+    }
+  ],
+  "combos": [
+    {
+      "id": "combo-kontak-ancaman",
+      "requires": [
+        "pin-akses-kontak",
+        "pin-ancaman"
+      ],
+      "minScore": 70,
+      "icon": "ShieldAlert",
+      "label": "Akses kontak digabung ancaman penyebaran data",
+      "explanation": "Gabungan ini adalah pola khas pinjol ilegal, jadi langsung dinilai risiko tinggi."
+    },
+    {
+      "id": "floor-ancaman",
+      "requires": [
+        "pin-ancaman"
+      ],
+      "minScore": 70,
+      "icon": "ShieldAlert",
+      "label": "Ancaman penagihan",
+      "explanation": "Ancaman atau penyebaran data pribadi bukan penagihan yang sah, jadi langsung dinilai risiko tinggi."
+    },
+    {
+      "id": "floor-imbal-pasti",
+      "requires": [
+        "inv-imbal-pasti"
+      ],
+      "minScore": 40,
+      "icon": "TrendingUp",
+      "label": "Janji untung tidak wajar",
+      "explanation": "Janji keuntungan pasti atau sangat tinggi sudah cukup menjadi alasan untuk waspada."
+    },
+    {
+      "id": "floor-imbal-plus",
+      "requires": [
+        "inv-imbal-pasti"
+      ],
+      "minOthers": 1,
+      "minScore": 70,
+      "icon": "TrendingUp",
+      "label": "Janji untung tidak wajar disertai tanda bahaya lain",
+      "explanation": "Janji untung tidak wajar yang dibarengi tanda bahaya lain adalah pola penipuan investasi."
+    }
+  ]
+}
