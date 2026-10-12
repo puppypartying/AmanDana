@@ -16,7 +16,7 @@
   },
   "kv_namespaces": [
     // Isi id dari Workers & Pages -> KV -> namespace Anda. Selama masih placeholder, deploy akan gagal (disengaja).
-    { "binding": "AMANDANA_KV", "id": "GANTI_DENGAN_ID_NAMESPACE_KV" }
+    { "binding": "AMANDANA_KV", "id": "f4f477e7af3d42609d4ad1e12e5937e1" }
   ],
   "vars": {
     // Dari Zero Trust: team domain dan Application Audience (AUD) tag aplikasi Access. Bukan rahasia.
